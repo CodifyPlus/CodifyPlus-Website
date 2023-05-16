@@ -7,7 +7,7 @@ import {
   Button,
   Container,
 } from "@mantine/core";
-import { useForm, ValidationError } from '@formspree/react';
+import { useForm } from '@formspree/react';
 import { Link } from "react-router-dom";
 
 export function ContactUs() {
