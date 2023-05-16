@@ -89,7 +89,7 @@ import {
     ));
   
     return (
-      <Container size={1000} className={classes.wrapper}>
+      <Container size='md' className={classes.wrapper}>
         <Text className={classes.supTitle}>{supTitle}</Text>
   
         <Title className={classes.title} order={2}>
