@@ -17,7 +17,7 @@ import Logo from "./Logo";
 import { IconChevronDown } from "@tabler/icons-react";
 
 const HEADER_HEIGHT = rem(60);
-const PUSH_DOWN = rem(90);
+const PUSH_DOWN = rem(120);
 
 const useStyles = createStyles((theme) => ({
   root: {
