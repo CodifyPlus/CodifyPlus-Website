@@ -32,8 +32,7 @@ export default function App() {
       <MantineProvider
         theme={{
           colorScheme,
-          fontFamily: "Verdana, sans-serif",
-          fontFamilyMonospace: "Monaco, Courier, monospace",
+          fontFamily: "Mulish, sans-serif",
         }}
         withGlobalStyles
         withNormalizeCSS
