@@ -202,19 +202,6 @@ export function Navbar({ links }: HeaderResponsiveProps) {
             {(styles) => (
               <Paper className={classes.dropdown} withBorder style={styles}>
                 {items}
-                <Link
-                  key={1}
-                  to={"/home"}
-                  className={cx(classes.link, {
-                    [classes.linkActive]: active === "/home",
-                  })}
-                  onClick={(event) => {
-                    setActive("/home");
-                    close();
-                  }}
-                >
-                  {"Home"}
-                </Link>
               </Paper>
             )}
           </Transition>
