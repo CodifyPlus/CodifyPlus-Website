@@ -5,8 +5,22 @@ const links = {
         "label": "Home"
       },
       {
-        "link": "/gst-calculator",
-        "label": "GST Calculator"
+        "link": "#tools",
+        "label": "Tools",
+        "links": [
+          {
+            "link": "/gst-calculator",
+            "label": "GST Calculator"
+          },
+          {
+            "link": "/demo",
+            "label": "Book a demo"
+          },
+          {
+            "link": "/forums",
+            "label": "Forums"
+          }
+        ]
       },
       {
         "link": "/learn",

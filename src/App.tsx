@@ -10,6 +10,7 @@ import { Route, Routes } from "react-router-dom";
 import { Navbar } from "./components/Fragments/Navbar/Navbar";
 import { Footer } from "./components/Fragments/Footer/Footer";
 import links from "./components/data/links";
+import footerLinks from "./components/data/footerLinks";
 
 export default function App() {
   const [colorScheme, setColorScheme] = useLocalStorage<ColorScheme>({
@@ -43,7 +44,7 @@ export default function App() {
           <Route index element={<Home />} />
           <Route path="gst-calculator" element={<GSTCalculator />} />
         </Routes>
-        <Footer />
+        <Footer data={footerLinks.data} />
       </MantineProvider>
     </ColorSchemeProvider>
   );
