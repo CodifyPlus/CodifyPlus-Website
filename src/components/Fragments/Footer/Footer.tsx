@@ -46,9 +46,7 @@ const useStyles = createStyles((theme) => ({
     display: 'flex',
     flexWrap: 'wrap',
 
-    [theme.fn.smallerThan('sm')]: {
-      display: 'none',
-    },
+    
   },
 
   wrapper: {
