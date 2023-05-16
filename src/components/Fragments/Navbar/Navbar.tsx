@@ -8,11 +8,14 @@ import {
   Paper,
   Transition,
   rem,
+  Menu,
+  Center,
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import DarkModeButton from "../DarkModeButton/DarkModeButton";
 import { Link } from "react-router-dom";
 import Logo from "./Logo";
+import { IconChevronDown } from "@tabler/icons-react";
 
 const HEADER_HEIGHT = rem(60);
 const PUSH_DOWN = rem(90);
@@ -95,10 +98,17 @@ const useStyles = createStyles((theme) => ({
         .color,
     },
   },
+  linkLabel: {
+    marginRight: rem(5),
+  },
 }));
 
 interface HeaderResponsiveProps {
-  links: { link: string; label: string }[];
+  links: {
+    link: string;
+    label: string;
+    links?: { link: string; label: string }[];
+  }[];
 }
 
 export function Navbar({ links }: HeaderResponsiveProps) {
@@ -110,21 +120,57 @@ export function Navbar({ links }: HeaderResponsiveProps) {
     setActive(window.location.pathname);
   }, []);
 
-  const items = links.map((link) => (
-    <Link
-      key={link.label}
-      to={link.link}
-      className={cx(classes.link, {
-        [classes.linkActive]: active === link.link,
-      })}
+  const items = links.map((link) => {
+    const menuItems = link.links?.map((item) => (
+      <Menu.Item component={Link} to={item.link}
       onClick={(event) => {
-        setActive(link.link);
+        setActive(item.link);
         close();
-      }}
-    >
-      {link.label}
-    </Link>
-  ));
+      }} key={item.link}>{item.label}</Menu.Item>
+    ));
+
+    if (menuItems) {
+      return (
+        <Menu
+          key={link.label}
+          trigger="hover"
+          transitionProps={{ exitDuration: 0 }}
+          withinPortal
+        >
+          <Menu.Target>
+            <Link
+              to={link.link}
+              className={classes.link}
+              onClick={(event) => {
+                setActive(link.link);
+              }}
+            >
+              <span className={classes.linkLabel}>{link.label}</span>
+              <IconChevronDown size="0.9rem" stroke={1.5} />
+            </Link>
+          </Menu.Target>
+          <Menu.Dropdown>{menuItems}</Menu.Dropdown>
+        </Menu>
+      );
+    }
+
+    return (
+      <Link
+        key={link.label}
+        to={link.link}
+        className={cx(classes.link, {
+          [classes.linkActive]: active === link.link,
+        })}
+        onClick={(event) => {
+          setActive(link.link);
+          close();
+        }}
+      >
+        {link.label}
+      </Link>
+    );
+  });
+
   return (
     <>
       <Header height={HEADER_HEIGHT} mb={40} className={classes.root}>
@@ -157,6 +203,19 @@ export function Navbar({ links }: HeaderResponsiveProps) {
             {(styles) => (
               <Paper className={classes.dropdown} withBorder style={styles}>
                 {items}
+                <Link
+                  key={1}
+                  to={"/home"}
+                  className={cx(classes.link, {
+                    [classes.linkActive]: active === "/home",
+                  })}
+                  onClick={(event) => {
+                    setActive("/home");
+                    close();
+                  }}
+                >
+                  {"Home"}
+                </Link>
               </Paper>
             )}
           </Transition>

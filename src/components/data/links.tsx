@@ -24,7 +24,7 @@ const links = {
       },
       {
         "link": "/learn",
-        "label": "Learn"
+        "label": "Learn",
       },
       {
         "link": "/community",
