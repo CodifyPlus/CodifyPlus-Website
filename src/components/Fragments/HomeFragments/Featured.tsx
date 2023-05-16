@@ -89,11 +89,11 @@ import {
     ));
   
     return (
-      <Container size={700} className={classes.wrapper}>
+      <Container size={1000} className={classes.wrapper}>
         <Text className={classes.supTitle}>{supTitle}</Text>
   
         <Title className={classes.title} order={2}>
-          StartupKro Tools are <span className={classes.highlight}>not</span> just for Enterpreneurs
+          CodifyPlus Services are for <span className={classes.highlight}>everyone</span>
         </Title>
   
         <Container size={660} p={0}>
@@ -103,7 +103,7 @@ import {
         </Container>
   
         <SimpleGrid
-          cols={2}
+          cols={3}
           spacing={50}
           breakpoints={[{ maxWidth: 550, cols: 1, spacing: 40 }]}
           style={{ marginTop: 30 }}

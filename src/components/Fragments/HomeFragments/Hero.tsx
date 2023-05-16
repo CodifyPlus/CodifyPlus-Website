@@ -72,7 +72,7 @@ import {
           <div className={classes.inner}>
             <div className={classes.content}>
               <Title className={classes.title}>
-                A <span className={classes.highlight}>modern</span> IT <br /> agency
+                Get a <span className={classes.highlight}>stunning</span>  <br />Digital Presence
               </Title>
               <Text color="dimmed" mt="md">
               Are you looking for someone to build your eCommerce website? Or your new startup's website or app?
