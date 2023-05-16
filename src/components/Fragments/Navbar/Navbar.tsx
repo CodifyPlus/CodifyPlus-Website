@@ -9,7 +9,6 @@ import {
   Transition,
   rem,
   Menu,
-  Center,
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import DarkModeButton from "../DarkModeButton/DarkModeButton";
