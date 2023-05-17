@@ -12,6 +12,8 @@ import { Footer } from "./components/Fragments/Footer/Footer";
 import links from "./components/data/links";
 import footerLinks from "./components/data/footerLinks";
 import { ContactUs } from "./components/Screens/ContactUs";
+import OurProcess from "./components/Screens/OurProcess";
+import OurServices from "./components/Screens/OurServices";
 
 export default function App() {
   const [colorScheme, setColorScheme] = useLocalStorage<ColorScheme>({
@@ -44,6 +46,8 @@ export default function App() {
           <Route index element={<Home />} />
           <Route path="gst-calculator" element={<GSTCalculator />} />
           <Route path="contact-us" element={<ContactUs />} />
+          <Route path="our-process" element={<OurProcess />} />
+          <Route path="our-services" element={<OurServices />} />
         </Routes>
         <Footer data={footerLinks.data} />
       </MantineProvider>

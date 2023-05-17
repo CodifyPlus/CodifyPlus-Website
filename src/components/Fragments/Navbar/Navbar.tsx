@@ -100,6 +100,14 @@ const useStyles = createStyles((theme) => ({
   linkLabel: {
     marginRight: rem(5),
   },
+  linkDrop: {
+    lineHeight: 1,
+    
+    [theme.fn.smallerThan("sm")]: {
+      borderRadius: 0,
+      //padding: theme.spacing.md,
+    },
+  },
 }));
 
 interface HeaderResponsiveProps {
@@ -121,7 +129,7 @@ export function Navbar({ links }: HeaderResponsiveProps) {
 
   const items = links.map((link) => {
     const menuItems = link.links?.map((item) => (
-      <Menu.Item component={Link} to={item.link}
+      <Menu.Item className={classes.linkDrop} component={Link} to={item.link}
       onClick={(event) => {
         setActive(item.link);
         close();

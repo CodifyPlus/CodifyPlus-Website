@@ -5,6 +5,28 @@ const links = {
         "label": "Home"
       },
       {
+        "link": "#about-us",
+        "label": "About Us",
+        "links": [
+          {
+            "link": "/our-process",
+            "label": "Our Process"
+          },
+          {
+            "link": "/our-services",
+            "label": "Our Services"
+          },
+          {
+            "link": "/our-clients",
+            "label": "Our Clients"
+          },
+          {
+            "link": "/faq",
+            "label": "FAQs"
+          }
+        ]
+      },
+      {
         "link": "/contact-us",
         "label": "Contact"
       },
