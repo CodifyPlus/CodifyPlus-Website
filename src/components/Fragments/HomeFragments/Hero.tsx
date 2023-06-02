@@ -9,8 +9,10 @@ import {
     List,
     ThemeIcon,
     rem,
+    Center
   } from '@mantine/core';
   import { IconCheck } from '@tabler/icons-react';
+import { Link } from 'react-router-dom';
   
   const useStyles = createStyles((theme) => ({
     inner: {
@@ -104,7 +106,7 @@ import {
               </List>
   
               <Group mt={30}>
-                <Button radius="xl" size="md" className={classes.control}>
+                <Button component={Link} to={`/our-services`} radius="xl" size="md" className={classes.control}>
                   View All Services
                 </Button>
                 <Button variant="default" radius="xl" size="md" className={classes.control}>
@@ -112,7 +114,9 @@ import {
                 </Button>
               </Group>
             </div>
+            <Center>
             <Image src={'https://ui.mantine.dev/_next/static/media/image.9a65bd94.svg'} className={classes.image} />
+            </Center>
           </div>
         </Container>
       </div>

@@ -20,10 +20,6 @@ const links = {
             "link": "/our-clients",
             "label": "Our Clients"
           },
-          {
-            "link": "/faq",
-            "label": "FAQs"
-          }
         ]
       },
       {
@@ -38,24 +34,12 @@ const links = {
             "link": "/gst-calculator",
             "label": "GST Calculator"
           },
-          {
-            "link": "/demo",
-            "label": "Book a demo"
-          },
-          {
-            "link": "/forums",
-            "label": "Forums"
-          }
         ]
       },
       {
-        "link": "/learn",
-        "label": "Learn",
+        "link": "https://dashboard.codifyplus.com",
+        "label": "Dashboard"
       },
-      {
-        "link": "/community",
-        "label": "Community"
-      }
     ]
   }
 

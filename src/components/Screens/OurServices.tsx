@@ -1,11 +1,12 @@
 import { Container } from '@mantine/core'
 import React from 'react'
-import { OurServicesHeader } from '../Fragments/OurServicesFragments/OurServicesHeader'
+import { FeaturesSection } from '../Fragments/HomeFragments/Featured'
+import featuredData from '../data/featuredData'
 
 function OurServices() {
   return (
     <Container my="md">
-        <OurServicesHeader/>
+        <FeaturesSection {...featuredData} />
     </Container>
   )
 }
