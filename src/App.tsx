@@ -15,6 +15,7 @@ import { ContactUs } from "./components/Screens/ContactUs";
 import OurProcess from "./components/Screens/OurProcess";
 import OurServices from "./components/Screens/OurServices";
 import OurProcesData from "./components/data/OurProcessData";
+import WebDevelopmentPage from "./components/Screens/ServicesPages/WebDevelopment";
 
 export default function App() {
   const [colorScheme, setColorScheme] = useLocalStorage<ColorScheme>({
@@ -49,6 +50,7 @@ export default function App() {
           <Route path="contact-us" element={<ContactUs />} />
           <Route path="our-process" element={<OurProcess title={OurProcesData.data.title} description={OurProcesData.data.description} />} />
           <Route path="our-services" element={<OurServices />} />
+          <Route path="web-development" element={<WebDevelopmentPage />} />
         </Routes>
         <Footer data={footerLinks.data} />
       </MantineProvider>

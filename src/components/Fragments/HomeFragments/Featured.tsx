@@ -8,6 +8,7 @@ import {
     createStyles,
     rem,
   } from '@mantine/core';
+import { Link } from 'react-router-dom';
 //   import IMAGES from './images';
   
   const useStyles = createStyles((theme) => ({
@@ -62,6 +63,7 @@ import {
     image: string;
     title: React.ReactNode;
     description: React.ReactNode;
+    link: any;
   }
   
   interface FeaturesImagesProps {
@@ -80,7 +82,7 @@ import {
         </ThemeIcon>
   
         <div>
-          <Text fw={700} fz="lg" className={classes.itemTitle}>
+          <Text component={Link} to={item.link} fw={700} fz="lg" className={classes.itemTitle}>
             {item.title}
           </Text>
           <Text c="dimmed">{item.description}</Text>
