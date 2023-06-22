@@ -93,7 +93,7 @@ export function PreviousWork({ data }: any) {
       breakpoints={[{ maxWidth: "sm", slideSize: "100%", slideGap: rem(2) }]}
       slideGap="xl"
       align="start"
-      slidesToScroll={mobile ? 1 : 2}
+      slidesToScroll={mobile ? 1 : 1}
       mr={20}
       ml={20}
       mt={20}
