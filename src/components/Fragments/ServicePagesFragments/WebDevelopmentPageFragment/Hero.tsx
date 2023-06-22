@@ -41,8 +41,8 @@ const useStyles = createStyles((theme) => ({
     marginBottom: theme.spacing.xs,
 
     [theme.fn.smallerThan('xs')]: {
-      fontSize: rem(28),
-      textAlign: 'left',
+      fontSize: rem(34),
+      textAlign: 'center',
     },
   },
 
@@ -54,7 +54,7 @@ const useStyles = createStyles((theme) => ({
     textAlign: 'center',
 
     [theme.fn.smallerThan('xs')]: {
-      textAlign: 'left',
+      textAlign: 'center',
       fontSize: theme.fontSizes.md,
     },
   },
@@ -97,7 +97,7 @@ export function WebDevelopmentHero() {
       <Dots className={classes.dots} style={{ right: 0, top: 60 }} />
 
       <div className={classes.inner}>
-        <Title className={classes.title}>
+        <Title align={"center"} className={classes.title}>
         Web Development{' '}
           <Text component="span" className={classes.highlight} inherit>
             Services
