@@ -16,6 +16,9 @@ import OurProcess from "./components/Screens/OurProcess";
 import OurServices from "./components/Screens/OurServices";
 import OurProcesData from "./components/data/OurProcessData";
 import WebDevelopmentPage from "./components/Screens/ServicesPages/WebDevelopment";
+import OnePersonCompany from "./components/Screens/ServicesPages/OnePersonCompany";
+import SoleProprietorship from "./components/Screens/ServicesPages/SoleProprietorship";
+import LimitedLiablityPartnership from "./components/Screens/ServicesPages/LimitedLiablityPartnership";
 
 export default function App() {
   const [colorScheme, setColorScheme] = useLocalStorage<ColorScheme>({
@@ -52,6 +55,9 @@ export default function App() {
           <Route path="our-process" element={<OurProcess title={OurProcesData.data.title} description={OurProcesData.data.description} />} />
           <Route path="our-services" element={<OurServices />} />
           <Route path="web-development" element={<WebDevelopmentPage />} />
+          <Route path="op" element={<OnePersonCompany />} />
+          <Route path="sole-proprietorship-firm" element={<SoleProprietorship />} />
+          <Route path="limited-liability-partnership" element={<LimitedLiablityPartnership />} />
         </Routes>
         <Footer data={footerLinks.data} />
       </MantineProvider>

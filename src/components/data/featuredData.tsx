@@ -4,21 +4,21 @@ const featuredData = {
     "data": [
       {
         "image": "https://ui.mantine.dev/_next/static/media/auditors.32124e83.svg",
-        "title": "Business Setup",
-        "description": 'Setting up your business has never been easier. Start your business journey on the right foot with CodifyPlus',
-        "link": "web-development",
+        "title": "One Person Company",
+        "description": 'Every Start-Up deserves seamless, trusted & hassle-free Legal Services',
+        "link": "op",
       },
       {
         "image": "https://ui.mantine.dev/_next/static/media/lawyers.3ddb0c33.svg",
-        "title": "Tax & Compliance",
+        "title": "Sole Proprietorship",
         "description": "Say goodbye to legal complexities with CodifyPlus's tax and compliance services",
-        "link": "web-development",
+        "link": "sole-proprietorship-firm",
       },
       {
         "image": "https://ui.mantine.dev/_next/static/media/accountants.ba1b4633.svg",
-        "title": "Trademark & IP",
+        "title": "Limited Liability Partnership",
         "description": "Protect your brand with CodifyPlus's trademark and IP services",
-        "link": "web-development",
+        "link": "limited-liability-partnership",
       },
       {
         "image": "https://ui.mantine.dev/_next/static/media/others.0a9c7795.svg",
