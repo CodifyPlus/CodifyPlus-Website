@@ -17,7 +17,13 @@ function OnePersonCompany() {
       <HowItWorks />
       <CustomH2 title={"Benefits of OPC"} />
       <Benefits mockdata={opBenefits} />
-      <CTA data={{heading: "Get Company Compliances Done", subheading: "Private Limited Company Compliances with us.", link: ""}} />
+      <CTA
+        data={{
+          heading: "Get Company Compliances Done",
+          subheading: "Private Limited Company Compliances with us.",
+          link: "",
+        }}
+      />
       <CustomH2 title={"Our Special Features"} />
       <Benefits mockdata={ourSpecialFeaturesData} />
       <CustomH2 title={"Our Testimonials"} />

@@ -8,6 +8,7 @@ import { llpbenefits } from "../../data/LegalServicesPagesData/LimitedLiablityPa
 import { CTA } from "../../Fragments/ServicePagesFragments/LegalServicesPagesFragments/CTA";
 import { ourSpecialFeaturesData } from "../../data/LegalServicesPagesData/CommonData/ourSpecialFeaturesData";
 import { Testimonials } from "../../Fragments/ServicePagesFragments/LegalServicesPagesFragments/Testimonials";
+import { OurPartners } from "../../Fragments/ServicePagesFragments/LegalServicesPagesFragments/OurPartners";
 
 function LimitedLiablityPartnership() {
   return (
@@ -28,6 +29,15 @@ function LimitedLiablityPartnership() {
       <Benefits mockdata={ourSpecialFeaturesData} />
       <CustomH2 title={"Our Testimonials"} />
       <Testimonials />
+      <CustomH2 title={"Our Partners"} />
+      <OurPartners />
+      <CTA
+        data={{
+          heading: "Start with Business Registration",
+          subheading: "Private Limited Company Registration in just 7 Days",
+          link: "",
+        }}
+      />
     </div>
   );
 }

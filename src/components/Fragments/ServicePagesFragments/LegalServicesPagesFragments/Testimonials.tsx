@@ -82,7 +82,7 @@ export function Testimonials() {
   ));
 
   return (
-    <Container size="lg" mt={40}>
+    <Container size="lg" mt={40} mb={40}>
       <Carousel
         withControls={false}
         loop
