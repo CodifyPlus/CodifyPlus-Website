@@ -91,6 +91,12 @@ import { Link } from 'react-router-dom';
         display: 'none',
       },
     },
+    subGroup: {
+      [theme.fn.smallerThan('sm')]: {
+        paddingLeft: "20px",
+        paddingRight: "20px"
+      },
+    },
   }));
   
   const mockdata_services = [
@@ -149,7 +155,7 @@ import { Link } from 'react-router-dom';
   
     const links_services = mockdata_services.map((item) => (
       <UnstyledButton component={Link} to={item.link} className={classes.subLink} key={item.title}>
-        <Group noWrap align="flex-start">
+        <Group className={classes.subGroup} noWrap align="flex-start">
           <ThemeIcon size={34} variant="default" radius="md">
             <item.icon size={rem(22)} color={theme.fn.primaryColor()} />
           </ThemeIcon>
@@ -167,7 +173,7 @@ import { Link } from 'react-router-dom';
 
     const links_tools = mockdata_tools.map((item) => (
         <UnstyledButton component={Link} to={item.link} className={classes.subLink} key={item.title}>
-          <Group noWrap align="flex-start">
+          <Group className={classes.subGroup} noWrap align="flex-start">
             <ThemeIcon size={34} variant="default" radius="md">
               <item.icon size={rem(22)} color={theme.fn.primaryColor()} />
             </ThemeIcon>
