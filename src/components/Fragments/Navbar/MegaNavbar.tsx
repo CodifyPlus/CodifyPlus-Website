@@ -154,7 +154,7 @@ import { Link } from 'react-router-dom';
     const { classes, theme } = useStyles();
   
     const links_services = mockdata_services.map((item) => (
-      <UnstyledButton component={Link} to={item.link} className={classes.subLink} key={item.title}>
+      <UnstyledButton onClick={closeDrawer} component={Link} to={item.link} className={classes.subLink} key={item.title}>
         <Group className={classes.subGroup} noWrap align="flex-start">
           <ThemeIcon size={34} variant="default" radius="md">
             <item.icon size={rem(22)} color={theme.fn.primaryColor()} />
@@ -172,7 +172,7 @@ import { Link } from 'react-router-dom';
     ));
 
     const links_tools = mockdata_tools.map((item) => (
-        <UnstyledButton component={Link} to={item.link} className={classes.subLink} key={item.title}>
+        <UnstyledButton onClick={closeDrawer} component={Link} to={item.link} className={classes.subLink} key={item.title}>
           <Group className={classes.subGroup} noWrap align="flex-start">
             <ThemeIcon size={34} variant="default" radius="md">
               <item.icon size={rem(22)} color={theme.fn.primaryColor()} />
@@ -314,7 +314,7 @@ import { Link } from 'react-router-dom';
           onClose={closeDrawer}
           size="100%"
           padding="md"
-          title="Navigation"
+          title="CodifyPlus"
           className={classes.hiddenDesktop}
           zIndex={1000000}
         >
