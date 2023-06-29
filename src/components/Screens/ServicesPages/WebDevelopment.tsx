@@ -13,6 +13,9 @@ import {
 } from "@mantine/core";
 import { Link } from "react-router-dom";
 import { FAQsWebDevelopment } from "../../Fragments/ServicePagesFragments/WebDevelopmentPageFragment/FAQs";
+import CustomH2 from "../../Fragments/CommonFragments/CustomH2";
+import { Testimonials } from "../../Fragments/ServicePagesFragments/LegalServicesPagesFragments/Testimonials";
+import { OurPartners } from "../../Fragments/ServicePagesFragments/LegalServicesPagesFragments/OurPartners";
 
 const useStyles = createStyles((theme) => ({
   controls: {
@@ -114,7 +117,11 @@ function WebDevelopmentPage() {
           </Button>
         </div>
       </Container>
-      <FAQsWebDevelopment/>
+      <FAQsWebDevelopment />
+      <CustomH2 title={"Our Testimonials"} />
+      <Testimonials />
+      <CustomH2 title={"Our Partners"} />
+      <OurPartners />
     </div>
   );
 }

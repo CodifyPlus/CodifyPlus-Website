@@ -7,9 +7,7 @@ import { useHotkeys, useLocalStorage } from "@mantine/hooks";
 import Home from "./components/Screens/Home";
 import GSTCalculator from "./components/Screens/GSTCalculator";
 import { Route, Routes } from "react-router-dom";
-import { Navbar } from "./components/Fragments/Navbar/Navbar";
 import { Footer } from "./components/Fragments/Footer/Footer";
-import links from "./components/data/links";
 import footerLinks from "./components/data/footerLinks";
 import { ContactUs } from "./components/Screens/ContactUs";
 import OurProcess from "./components/Screens/OurProcess";
@@ -19,6 +17,7 @@ import WebDevelopmentPage from "./components/Screens/ServicesPages/WebDevelopmen
 import OnePersonCompany from "./components/Screens/ServicesPages/OnePersonCompany";
 import SoleProprietorship from "./components/Screens/ServicesPages/SoleProprietorship";
 import LimitedLiablityPartnership from "./components/Screens/ServicesPages/LimitedLiablityPartnership";
+import { MegaNavbar } from "./components/Fragments/Navbar/MegaNavbar";
 
 export default function App() {
   const [colorScheme, setColorScheme] = useLocalStorage<ColorScheme>({
@@ -46,7 +45,8 @@ export default function App() {
         withGlobalStyles
         withNormalizeCSS
       >
-        <Navbar links={links.links} />
+      
+        <MegaNavbar/>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route index element={<Home />} />

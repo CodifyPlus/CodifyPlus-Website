@@ -7,12 +7,11 @@ function DarkModeButton() {
 
   return (
     <ActionIcon
-      variant="outline"
       color={dark ? 'yellow' : 'blue'}
       onClick={() => toggleColorScheme()}
       title="Toggle color scheme"
     >
-      {dark ? <IconSun size="1.1rem" /> : <IconMoonStars size="1.1rem" />}
+      {dark ? <IconSun size="1.3rem" /> : <IconMoonStars size="1.3rem" />}
     </ActionIcon>
   );
 }
