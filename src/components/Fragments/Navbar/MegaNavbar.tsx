@@ -321,7 +321,7 @@ import { Link } from 'react-router-dom';
           <ScrollArea h={`calc(100vh - ${rem(60)})`} mx="-md">
             <Divider my="sm" color={theme.colorScheme === 'dark' ? 'dark.5' : 'gray.1'} />
   
-            <Link to="/" className={classes.link}>
+            <Link onClick={closeDrawer} to="/" className={classes.link}>
               Home
             </Link>
             <UnstyledButton className={classes.link} onClick={toggleLinks_services}>
@@ -342,10 +342,10 @@ import { Link } from 'react-router-dom';
               </Center>
             </UnstyledButton>
             <Collapse in={linksOpened_tools}>{links_tools}</Collapse>
-            <Link to="contact-us" className={classes.link}>
+            <Link onClick={closeDrawer} to="contact-us" className={classes.link}>
               Contact
             </Link>
-            <Link to="https://dashboard.codifyplus.com" className={classes.link}>
+            <Link onClick={closeDrawer} to="https://dashboard.codifyplus.com" className={classes.link}>
               Dashboard
             </Link>
   
