@@ -1,4 +1,4 @@
-import { Card, Title, createStyles, rem, Text } from "@mantine/core";
+import { Card, Title, createStyles, rem, Text, Anchor } from "@mantine/core";
 import GetGSTRegButton from "./GetGSTRegButton";
 
 const useStyles = createStyles((theme) => ({
@@ -98,11 +98,11 @@ export default function RightPanel({
         <></>
       )}
       <Card.Section p="md">
-        <a href="https://startupkro.com/gst-registration/" target="blank">
+        <Anchor href="https://startupkro.com/gst-registration/" target="blank">
           <GetGSTRegButton size="1.2rem" p="md" fullWidth>
             Get your GST Registration
           </GetGSTRegButton>
-        </a>
+        </Anchor>
       </Card.Section>
     </Card>
   );
