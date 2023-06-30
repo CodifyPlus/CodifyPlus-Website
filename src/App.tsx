@@ -69,7 +69,7 @@ export default function App() {
           <Route
             path="gst-calculator"
             element={
-              <React.Suspense fallback={<>...</>}>
+              <React.Suspense fallback={<></>}>
                 <GSTCalculator />
               </React.Suspense>
             }
@@ -77,7 +77,7 @@ export default function App() {
           <Route
             path="contact-us"
             element={
-              <React.Suspense fallback={<>...</>}>
+              <React.Suspense fallback={<></>}>
                 <ContactUs />
               </React.Suspense>
             }
@@ -85,7 +85,7 @@ export default function App() {
           <Route
             path="our-process"
             element={
-              <React.Suspense fallback={<>...</>}>
+              <React.Suspense fallback={<></>}>
                 <OurProcess
                   title={OurProcesData.data.title}
                   description={OurProcesData.data.description}
@@ -96,7 +96,7 @@ export default function App() {
           <Route
             path="our-services"
             element={
-              <React.Suspense fallback={<>...</>}>
+              <React.Suspense fallback={<></>}>
                 <OurServices />
               </React.Suspense>
             }
@@ -104,7 +104,7 @@ export default function App() {
           <Route
             path="web-development"
             element={
-              <React.Suspense fallback={<>...</>}>
+              <React.Suspense fallback={<></>}>
                 <WebDevelopmentPage />
               </React.Suspense>
             }
@@ -112,7 +112,7 @@ export default function App() {
           <Route
             path="op"
             element={
-              <React.Suspense fallback={<>...</>}>
+              <React.Suspense fallback={<></>}>
                 <OnePersonCompany />
               </React.Suspense>
             }
@@ -120,7 +120,7 @@ export default function App() {
           <Route
             path="sole-proprietorship-firm"
             element={
-              <React.Suspense fallback={<>...</>}>
+              <React.Suspense fallback={<></>}>
                 <SoleProprietorship />
               </React.Suspense>
             }
@@ -128,7 +128,7 @@ export default function App() {
           <Route
             path="limited-liability-partnership"
             element={
-              <React.Suspense fallback={<>...</>}>
+              <React.Suspense fallback={<></>}>
                 <LimitedLiablityPartnership />
               </React.Suspense>
             }
