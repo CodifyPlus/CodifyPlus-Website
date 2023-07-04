@@ -35,6 +35,9 @@ const SoleProprietorship = React.lazy(
 const LimitedLiablityPartnership = React.lazy(
   () => import("./components/Screens/ServicesPages/LimitedLiablityPartnership")
 );
+const PrivateLimitedCompany = React.lazy(
+  () => import("./components/Screens/ServicesPages/PrivateLimitedCompany")
+);
 
 export default function App() {
   const [colorScheme, setColorScheme] = useLocalStorage<ColorScheme>({
@@ -130,6 +133,14 @@ export default function App() {
             element={
               <React.Suspense fallback={<></>}>
                 <LimitedLiablityPartnership />
+              </React.Suspense>
+            }
+          />
+          <Route
+            path="private-limited-company"
+            element={
+              <React.Suspense fallback={<></>}>
+                <PrivateLimitedCompany />
               </React.Suspense>
             }
           />
