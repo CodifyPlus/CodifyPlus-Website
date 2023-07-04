@@ -1,6 +1,5 @@
 import React from "react";
 import { HeroHeading } from "../../Fragments/ServicePagesFragments/LegalServicesPagesFragments/HeroHeading";
-import { heroHeadingData } from "../../data/LegalServicesPagesData/LimitedLiablityPartnership/heroHeadingData";
 import CustomH2 from "../../Fragments/CommonFragments/CustomH2";
 import { HowItWorks } from "../../Fragments/ServicePagesFragments/LegalServicesPagesFragments/HowItWorks";
 import { Benefits } from "../../Fragments/ServicePagesFragments/LegalServicesPagesFragments/Benefits";
@@ -9,11 +8,12 @@ import { CTA } from "../../Fragments/ServicePagesFragments/LegalServicesPagesFra
 import { ourSpecialFeaturesData } from "../../data/LegalServicesPagesData/CommonData/ourSpecialFeaturesData";
 import { Testimonials } from "../../Fragments/ServicePagesFragments/LegalServicesPagesFragments/Testimonials";
 import { OurPartners } from "../../Fragments/ServicePagesFragments/LegalServicesPagesFragments/OurPartners";
+import { pvtltdHeroData } from "../../data/LegalServicesPagesData/PrivateLimitedCompany/privateLimitedCompanyHeroHeadingData";
 
 function PrivateLimitedCompany() {
   return (
     <div>
-      <HeroHeading data={heroHeadingData.data} />
+      <HeroHeading data={pvtltdHeroData.data} />
       <CustomH2 title={"How it Works?"} />
       <HowItWorks />
       <CustomH2 title={"Benefits of Private Limited Company"} />
