@@ -1,7 +1,7 @@
 export const heroHeadingData = {
     data: {
-      simple: "Private Limited",
-      highlighted: "Company",
+      simple: "Limited Liability",
+      highlighted: "Partnership",
       link1: "",
       link2: "",
       description:
