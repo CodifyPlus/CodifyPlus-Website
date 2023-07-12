@@ -38,6 +38,15 @@ const LimitedLiablityPartnership = React.lazy(
 const PrivateLimitedCompany = React.lazy(
   () => import("./components/Screens/ServicesPages/PrivateLimitedCompany")
 );
+const MSMERegistration = React.lazy(
+  () => import("./components/Screens/ServicesPages/MSMERegistration")
+);
+const TrademarkSearch = React.lazy(
+  () => import("./components/Screens/ServicesPages/TrademarkSearch")
+);
+const TrademarkRegistration = React.lazy(
+  () => import("./components/Screens/ServicesPages/TrademarkRegistration")
+);
 
 export default function App() {
   const [colorScheme, setColorScheme] = useLocalStorage<ColorScheme>({
@@ -141,6 +150,30 @@ export default function App() {
             element={
               <React.Suspense fallback={<></>}>
                 <PrivateLimitedCompany />
+              </React.Suspense>
+            }
+          />
+          <Route
+            path="msme-registration"
+            element={
+              <React.Suspense fallback={<></>}>
+                <MSMERegistration />
+              </React.Suspense>
+            }
+          />
+          <Route
+            path="trademark-search"
+            element={
+              <React.Suspense fallback={<></>}>
+                <TrademarkSearch />
+              </React.Suspense>
+            }
+          />
+          <Route
+            path="trademark-registration"
+            element={
+              <React.Suspense fallback={<></>}>
+                <TrademarkRegistration />
               </React.Suspense>
             }
           />
