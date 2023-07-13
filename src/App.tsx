@@ -47,6 +47,12 @@ const TrademarkSearch = React.lazy(
 const TrademarkRegistration = React.lazy(
   () => import("./components/Screens/ServicesPages/TrademarkRegistration")
 );
+const RocCompliancesPvtLtdCo = React.lazy(
+  () => import("./components/Screens/ServicesPages/RocCompliancesPvtLtdCo")
+);
+const RocCompliancesLLP = React.lazy(
+  () => import("./components/Screens/ServicesPages/RocCompliancesLLP")
+);
 
 export default function App() {
   const [colorScheme, setColorScheme] = useLocalStorage<ColorScheme>({
@@ -174,6 +180,22 @@ export default function App() {
             element={
               <React.Suspense fallback={<></>}>
                 <TrademarkRegistration />
+              </React.Suspense>
+            }
+          />
+          <Route
+            path="roc-compliance-pvt-ltd-company"
+            element={
+              <React.Suspense fallback={<></>}>
+                <RocCompliancesPvtLtdCo />
+              </React.Suspense>
+            }
+          />
+          <Route
+            path="roc-compliance-llp"
+            element={
+              <React.Suspense fallback={<></>}>
+                <RocCompliancesLLP />
               </React.Suspense>
             }
           />
