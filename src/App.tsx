@@ -53,6 +53,18 @@ const RocCompliancesPvtLtdCo = React.lazy(
 const RocCompliancesLLP = React.lazy(
   () => import("./components/Screens/ServicesPages/RocCompliancesLLP")
 );
+const GSTRegistration = React.lazy(
+  () => import("./components/Screens/ServicesPages/GSTRegistration")
+);
+const FSSAIRegistration = React.lazy(
+  () => import("./components/Screens/ServicesPages/FSSAIRegistration")
+);
+const ISOCertification = React.lazy(
+  () => import("./components/Screens/ServicesPages/ISOCertification")
+);
+const ImportExportCode = React.lazy(
+  () => import("./components/Screens/ServicesPages/ImportExportCode")
+);
 
 export default function App() {
   const [colorScheme, setColorScheme] = useLocalStorage<ColorScheme>({
@@ -196,6 +208,38 @@ export default function App() {
             element={
               <React.Suspense fallback={<></>}>
                 <RocCompliancesLLP />
+              </React.Suspense>
+            }
+          />
+          <Route
+            path="gst-registration"
+            element={
+              <React.Suspense fallback={<></>}>
+                <GSTRegistration />
+              </React.Suspense>
+            }
+          />
+          <Route
+            path="fssai-registration"
+            element={
+              <React.Suspense fallback={<></>}>
+                <FSSAIRegistration />
+              </React.Suspense>
+            }
+          />
+          <Route
+            path="iso-certification"
+            element={
+              <React.Suspense fallback={<></>}>
+                <ISOCertification />
+              </React.Suspense>
+            }
+          />
+          <Route
+            path="import-export-code"
+            element={
+              <React.Suspense fallback={<></>}>
+                <ImportExportCode />
               </React.Suspense>
             }
           />
