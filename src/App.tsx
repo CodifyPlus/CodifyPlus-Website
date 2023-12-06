@@ -2,6 +2,8 @@ import {
   MantineProvider,
   ColorSchemeProvider,
   ColorScheme,
+  Center,
+  Loader,
 } from "@mantine/core";
 import { useHotkeys, useLocalStorage } from "@mantine/hooks";
 import Home from "./components/Screens/Home";
@@ -99,7 +101,15 @@ export default function App() {
           <Route
             path="gst-calculator"
             element={
-              <React.Suspense fallback={<></>}>
+              <React.Suspense
+                fallback={
+                  <>
+                    <Center>
+                      <Loader />
+                    </Center>
+                  </>
+                }
+              >
                 <GSTCalculator />
               </React.Suspense>
             }
@@ -107,7 +117,15 @@ export default function App() {
           <Route
             path="contact-us"
             element={
-              <React.Suspense fallback={<></>}>
+              <React.Suspense
+                fallback={
+                  <>
+                    <Center>
+                      <Loader />
+                    </Center>
+                  </>
+                }
+              >
                 <ContactUs />
               </React.Suspense>
             }
@@ -115,7 +133,15 @@ export default function App() {
           <Route
             path="our-process"
             element={
-              <React.Suspense fallback={<></>}>
+              <React.Suspense
+                fallback={
+                  <>
+                    <Center>
+                      <Loader />
+                    </Center>
+                  </>
+                }
+              >
                 <OurProcess
                   title={OurProcesData.data.title}
                   description={OurProcesData.data.description}
@@ -126,7 +152,15 @@ export default function App() {
           <Route
             path="our-services"
             element={
-              <React.Suspense fallback={<></>}>
+              <React.Suspense
+                fallback={
+                  <>
+                    <Center>
+                      <Loader />
+                    </Center>
+                  </>
+                }
+              >
                 <OurServices />
               </React.Suspense>
             }
@@ -134,7 +168,15 @@ export default function App() {
           <Route
             path="web-development"
             element={
-              <React.Suspense fallback={<></>}>
+              <React.Suspense
+                fallback={
+                  <>
+                    <Center>
+                      <Loader />
+                    </Center>
+                  </>
+                }
+              >
                 <WebDevelopmentPage />
               </React.Suspense>
             }
@@ -142,7 +184,15 @@ export default function App() {
           <Route
             path="op"
             element={
-              <React.Suspense fallback={<></>}>
+              <React.Suspense
+                fallback={
+                  <>
+                    <Center>
+                      <Loader />
+                    </Center>
+                  </>
+                }
+              >
                 <OnePersonCompany />
               </React.Suspense>
             }
@@ -150,7 +200,15 @@ export default function App() {
           <Route
             path="sole-proprietorship-firm"
             element={
-              <React.Suspense fallback={<></>}>
+              <React.Suspense
+                fallback={
+                  <>
+                    <Center>
+                      <Loader />
+                    </Center>
+                  </>
+                }
+              >
                 <SoleProprietorship />
               </React.Suspense>
             }
@@ -158,7 +216,15 @@ export default function App() {
           <Route
             path="limited-liability-partnership"
             element={
-              <React.Suspense fallback={<></>}>
+              <React.Suspense
+                fallback={
+                  <>
+                    <Center>
+                      <Loader />
+                    </Center>
+                  </>
+                }
+              >
                 <LimitedLiablityPartnership />
               </React.Suspense>
             }
@@ -166,7 +232,15 @@ export default function App() {
           <Route
             path="private-limited-company"
             element={
-              <React.Suspense fallback={<></>}>
+              <React.Suspense
+                fallback={
+                  <>
+                    <Center>
+                      <Loader />
+                    </Center>
+                  </>
+                }
+              >
                 <PrivateLimitedCompany />
               </React.Suspense>
             }
@@ -174,7 +248,15 @@ export default function App() {
           <Route
             path="msme-registration"
             element={
-              <React.Suspense fallback={<></>}>
+              <React.Suspense
+                fallback={
+                  <>
+                    <Center>
+                      <Loader />
+                    </Center>
+                  </>
+                }
+              >
                 <MSMERegistration />
               </React.Suspense>
             }
@@ -182,7 +264,15 @@ export default function App() {
           <Route
             path="trademark-search"
             element={
-              <React.Suspense fallback={<></>}>
+              <React.Suspense
+                fallback={
+                  <>
+                    <Center>
+                      <Loader />
+                    </Center>
+                  </>
+                }
+              >
                 <TrademarkSearch />
               </React.Suspense>
             }
@@ -190,7 +280,15 @@ export default function App() {
           <Route
             path="trademark-registration"
             element={
-              <React.Suspense fallback={<></>}>
+              <React.Suspense
+                fallback={
+                  <>
+                    <Center>
+                      <Loader />
+                    </Center>
+                  </>
+                }
+              >
                 <TrademarkRegistration />
               </React.Suspense>
             }
@@ -198,7 +296,15 @@ export default function App() {
           <Route
             path="roc-compliance-pvt-ltd-company"
             element={
-              <React.Suspense fallback={<></>}>
+              <React.Suspense
+                fallback={
+                  <>
+                    <Center>
+                      <Loader />
+                    </Center>
+                  </>
+                }
+              >
                 <RocCompliancesPvtLtdCo />
               </React.Suspense>
             }
@@ -206,7 +312,15 @@ export default function App() {
           <Route
             path="roc-compliance-llp"
             element={
-              <React.Suspense fallback={<></>}>
+              <React.Suspense
+                fallback={
+                  <>
+                    <Center>
+                      <Loader />
+                    </Center>
+                  </>
+                }
+              >
                 <RocCompliancesLLP />
               </React.Suspense>
             }
@@ -214,7 +328,15 @@ export default function App() {
           <Route
             path="gst-registration"
             element={
-              <React.Suspense fallback={<></>}>
+              <React.Suspense
+                fallback={
+                  <>
+                    <Center>
+                      <Loader />
+                    </Center>
+                  </>
+                }
+              >
                 <GSTRegistration />
               </React.Suspense>
             }
@@ -222,7 +344,15 @@ export default function App() {
           <Route
             path="fssai-registration"
             element={
-              <React.Suspense fallback={<></>}>
+              <React.Suspense
+                fallback={
+                  <>
+                    <Center>
+                      <Loader />
+                    </Center>
+                  </>
+                }
+              >
                 <FSSAIRegistration />
               </React.Suspense>
             }
@@ -230,7 +360,15 @@ export default function App() {
           <Route
             path="iso-certification"
             element={
-              <React.Suspense fallback={<></>}>
+              <React.Suspense
+                fallback={
+                  <>
+                    <Center>
+                      <Loader />
+                    </Center>
+                  </>
+                }
+              >
                 <ISOCertification />
               </React.Suspense>
             }
@@ -238,7 +376,15 @@ export default function App() {
           <Route
             path="import-export-code"
             element={
-              <React.Suspense fallback={<></>}>
+              <React.Suspense
+                fallback={
+                  <>
+                    <Center>
+                      <Loader />
+                    </Center>
+                  </>
+                }
+              >
                 <ImportExportCode />
               </React.Suspense>
             }
