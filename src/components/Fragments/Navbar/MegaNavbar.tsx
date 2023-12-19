@@ -48,10 +48,11 @@ import {
   IconLicense,
   IconSquareDot,
   IconTruck,
+  IconBuilding,
 } from "@tabler/icons-react";
-import Logo from "./Logo";
 import DarkModeButton from "../DarkModeButton/DarkModeButton";
 import { Link } from "react-router-dom";
+import LogoStatic from "./LogoStatic";
 
 const useStyles = createStyles((theme) => ({
   link: {
@@ -132,43 +133,50 @@ const mockdata_shurukro = [
   {
     icon: IconLock,
     title: "Pvt. Ltd. Company",
-    description: "This Pokémon’s cry is very loud and distracting",
+    description: "Register Your Private Limited Company from anywhere in India",
     link: "",
   },
   {
     icon: IconCoin,
     title: "Section 8 Company",
-    description: "The fluid of Smeargle’s tail secretions changes",
+    description: "Register Your NGO/ Section 8 Company Online",
     link: "",
   },
   {
     icon: IconBook,
     title: "LLP Registration",
-    description: "Yanma is capable of seeing 360 degrees without",
+    description: "Register Your One Person Company by Start-Up Kro",
     link: "",
   },
   {
     icon: IconFingerprint,
     title: "UDYAM Registration",
-    description: "The shell’s rounded shape and the grooves on its.",
+    description: "Register Your MSME (UDYAM) Online in 24 Hrs",
     link: "",
   },
   {
     icon: IconChartPie3,
     title: "OPC Registration",
-    description: "This Pokémon uses its flying ability to quickly chase",
+    description: "Register Your One Person Company by Start-Up Kro",
     link: "",
   },
   {
     icon: IconNotification,
     title: "Partnership Firm Registration",
-    description: "Combusken battles with the intensely hot flames it spews",
+    description: "Register Your Partnership Firm Online ",
     link: "",
   },
   {
     icon: IconGlobe,
     title: "Website Development",
-    description: "Combusken battles with the intensely hot flames it spews",
+    description:
+      "Take your business online with our website development services",
+    link: "",
+  },
+  {
+    icon: IconBuilding,
+    title: "Sole Proprietorship",
+    description: "Register Your Sole Prop Online within 7 Days",
     link: "",
   },
 ];
@@ -177,50 +185,50 @@ const mockdata_protectkro = [
   {
     icon: IconSearch,
     title: "Trademark Search",
-    description: "Calculate your GST on the products can services",
-    link: "gst-calculator",
+    description: "Get FREE Instant Trademark Search Report (TSR)",
+    link: "",
   },
   {
     icon: IconTrademark,
     title: "Trademark Registration",
-    description: "Calculate your GST on the products can services",
-    link: "gst-calculator",
+    description: "Get Trademark Application Filed within 4 Days",
+    link: "",
   },
   {
     icon: IconShield,
     title: "Trademark Objection",
-    description: "Calculate your GST on the products can services",
-    link: "gst-calculator",
+    description: "Clear the Trademark Objections by our IP Experts",
+    link: "",
   },
   {
     icon: IconBrush,
     title: "Logo Designing",
-    description: "Calculate your GST on the products can services",
-    link: "gst-calculator",
+    description: "Logo Designing starting at Just Rs. 999/-",
+    link: "",
   },
   {
     icon: IconBolt,
     title: "Pitch Designing",
-    description: "Calculate your GST on the products can services",
-    link: "gst-calculator",
+    description: "Business & Funding Pitch Designing by Start-Up Mentors",
+    link: "",
   },
   {
     icon: IconCopyright,
     title: "Copyright",
-    description: "Calculate your GST on the products can services",
-    link: "gst-calculator",
+    description: "Protect your books, websites, content with Copyright",
+    link: "",
   },
   {
     icon: IconNews,
     title: "Brochure",
-    description: "Calculate your GST on the products can services",
-    link: "gst-calculator",
+    description: "Brochure, Poster & Graphic Designing starting at Rs. 99/-",
+    link: "",
   },
   {
     icon: IconShieldBolt,
     title: "Patent",
-    description: "Calculate your GST on the products can services",
-    link: "gst-calculator",
+    description: "Patent Search & 1:1 mentoring by Patent Attorney",
+    link: "",
   },
 ];
 
@@ -438,7 +446,7 @@ export function MegaNavbar() {
       >
         <Group position="apart" sx={{ height: "100%" }}>
           <Link to="/">
-            <Logo />
+            <LogoStatic />
           </Link>
 
           <Group
