@@ -701,8 +701,8 @@ export function MegaNavbar() {
                 </div>
               </HoverCard.Dropdown>
             </HoverCard>
-            <Link to="contact-us" className={classes.link}>
-              Contact
+            <Link to="schedule-meeting" className={classes.link}>
+              Schedule a meeting
             </Link>
             <Link
               to="https://dashboard.codifyplus.com"
@@ -788,7 +788,10 @@ export function MegaNavbar() {
             </Center>
           </UnstyledButton>
           <Collapse in={linksOpened_tools}>{links_managekro}</Collapse>
-          <UnstyledButton className={classes.link} onClick={toggleLinks_growkro}>
+          <UnstyledButton
+            className={classes.link}
+            onClick={toggleLinks_growkro}
+          >
             <Center inline>
               <Box component="span" mr={5}>
                 Grow Kro
@@ -797,8 +800,12 @@ export function MegaNavbar() {
             </Center>
           </UnstyledButton>
           <Collapse in={linksOpened_growkro}>{links_growkro}</Collapse>
-          <Link onClick={closeDrawer} to="contact-us" className={classes.link}>
-            Contact
+          <Link
+            onClick={closeDrawer}
+            to="schedule-meeting"
+            className={classes.link}
+          >
+            Schedule a meeting
           </Link>
           <Link
             onClick={closeDrawer}
