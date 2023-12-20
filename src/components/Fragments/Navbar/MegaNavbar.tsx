@@ -134,31 +134,31 @@ const mockdata_shurukro = [
     icon: IconLock,
     title: "Pvt. Ltd. Company",
     description: "Register Your Private Limited Company from anywhere in India",
-    link: "",
+    link: "private-limited-company",
   },
   {
     icon: IconCoin,
     title: "Section 8 Company",
     description: "Register Your NGO/ Section 8 Company Online",
-    link: "",
+    link: "section-8-company",
   },
   {
     icon: IconBook,
     title: "LLP Registration",
     description: "Register Your One Person Company by Start-Up Kro",
-    link: "",
+    link: "limited-liability-partnership",
   },
   {
     icon: IconFingerprint,
     title: "UDYAM Registration",
     description: "Register Your MSME (UDYAM) Online in 24 Hrs",
-    link: "",
+    link: "msme-registration",
   },
   {
     icon: IconChartPie3,
     title: "OPC Registration",
     description: "Register Your One Person Company by Start-Up Kro",
-    link: "",
+    link: "op",
   },
   {
     icon: IconNotification,
@@ -171,13 +171,13 @@ const mockdata_shurukro = [
     title: "Website Development",
     description:
       "Take your business online with our website development services",
-    link: "",
+    link: "web-development",
   },
   {
     icon: IconBuilding,
     title: "Sole Proprietorship",
     description: "Register Your Sole Prop Online within 7 Days",
-    link: "",
+    link: "sole-proprietorship-firm",
   },
 ];
 

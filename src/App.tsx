@@ -40,6 +40,9 @@ const SoleProprietorship = React.lazy(
 const LimitedLiablityPartnership = React.lazy(
   () => import("./components/Screens/ServicesPages/LimitedLiablityPartnership")
 );
+const Section8Company = React.lazy(
+  () => import("./components/Screens/ServicesPages/Section8Company")
+);
 const PrivateLimitedCompany = React.lazy(
   () => import("./components/Screens/ServicesPages/PrivateLimitedCompany")
 );
@@ -246,6 +249,22 @@ export default function App() {
                 }
               >
                 <LimitedLiablityPartnership />
+              </React.Suspense>
+            }
+          />
+          <Route
+            path="section-8-company"
+            element={
+              <React.Suspense
+                fallback={
+                  <>
+                    <Center>
+                      <Loader />
+                    </Center>
+                  </>
+                }
+              >
+                <Section8Company />
               </React.Suspense>
             }
           />
