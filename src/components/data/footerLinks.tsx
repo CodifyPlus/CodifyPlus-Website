@@ -90,65 +90,109 @@ export const footerLinks2 = {
       ],
     },
     {
-      title: "Dashboard",
+      title: "Protect Kro",
       links: [
         {
-          label: "Visit Dashboard",
-          link: "https://dashboard.codifyplus.com/",
+          label: "Trademark Registration",
+          link: "https://startupkro.com/trademark-registration/",
         },
         {
-          label: "Register",
-          link: "https://dashboard.codifyplus.com/login",
+          label: "Trademark Search",
+          link: "https://startupkro.com/trademark-registration/",
         },
         {
-          label: "Changelog",
-          link: "#",
+          label: "Trademark Litigation",
+          link: "https://startupkro.com/trademark-registration/",
         },
         {
-          label: "Releases",
-          link: "#",
+          label: "Infringement Notice",
+          link: "https://startupkro.com/manage-kro/",
+        },
+        {
+          label: "Copyright Registration",
+          link: "https://startupkro.com/manage-kro/",
+        },
+        {
+          label: "Copyright Objection",
+          link: "https://startupkro.com/manage-kro/",
         },
       ],
     },
     {
-      title: "Community",
+      title: "Manage Kro",
       links: [
         {
-          label: "Join Discord",
-          link: "#",
+          label: "GST Registration",
+          link: "https://startupkro.com/gst-registration/",
         },
         {
-          label: "Follow on Twitter",
-          link: "#",
+          label: "Director Add/Removal",
+          link: "https://startupkro.com/shuru-kro/",
         },
         {
-          label: "Email newsletter",
-          link: "#",
+          label: "Winding Up Company",
+          link: "https://startupkro.com/protect-kro/",
         },
         {
-          label: "GitHub discussions",
-          link: "#",
+          label: "ROC Compliances of Pvt. Ltd.",
+          link: "https://startupkro.com/manage-kro/",
+        },
+        {
+          label: "ROC Compliances of LLP",
+          link: "https://startupkro.com/grow-kro/",
+        },
+        {
+          label: "Closure of LLP",
+          link: "https://startupkro.com/grow-kro/",
+        },
+        {
+          label: "GST Filings",
+          link: "https://startupkro.com/grow-kro/",
+        },
+        {
+          label: "Income Tax Filings",
+          link: "https://startupkro.com/grow-kro/",
+        },
+        {
+          label: "Share Pattern Certificate",
+          link: "https://startupkro.com/share-pattern-certificate/",
         },
       ],
     },
     {
-      title: "Other Links",
+      title: "Grow Kro",
       links: [
         {
-          label: "Join Discord",
-          link: "#",
+          label: "FSSAI Registration",
+          link: "https://startupkro.com/fssai-registration/",
         },
         {
-          label: "Follow on Twitter",
-          link: "#",
+          label: "ISO Certification",
+          link: "https://startupkro.com/iso-certification/",
         },
         {
-          label: "Email newsletter",
-          link: "#",
+          label: "Import-Export Code (IEC)",
+          link: "https://startupkro.com/import-export-code/",
         },
         {
-          label: "GitHub discussions",
-          link: "#",
+          label: "Project Report for MSME Loan",
+          link: "",
+        },
+        {
+          label: "Business Growth Advisory",
+          link: "",
+        },
+        {
+          label: "Valuation Report",
+          link: "",
+        },
+        {
+          label: "VC Funding Registration",
+          link: "",
+        },
+        {
+          label: "Pitch Deck Formation",
+          link: "",
         },
       ],
     },
