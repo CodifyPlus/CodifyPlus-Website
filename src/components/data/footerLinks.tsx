@@ -4,6 +4,10 @@ const footerLinks = {
         "title": "About",
         "links": [
           {
+            "label": "About Us",
+            "link": "/about-us"
+          },
+          {
             "label": "Features",
             "link": "#"
           },

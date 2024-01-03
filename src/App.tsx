@@ -25,6 +25,7 @@ const OurProcess = React.lazy(() => import("./components/Screens/OurProcess"));
 const OurServices = React.lazy(
   () => import("./components/Screens/OurServices")
 );
+const AboutUs = React.lazy(() => import("./components/Screens/AboutUs"));
 const ScheduleMeeting = React.lazy(
   () => import("./components/Screens/ScheduleMeeting")
 );
@@ -169,6 +170,22 @@ export default function App() {
                 }
               >
                 <OurServices />
+              </React.Suspense>
+            }
+          />
+          <Route
+            path="about-us"
+            element={
+              <React.Suspense
+                fallback={
+                  <>
+                    <Center>
+                      <Loader />
+                    </Center>
+                  </>
+                }
+              >
+                <AboutUs />
               </React.Suspense>
             }
           />
