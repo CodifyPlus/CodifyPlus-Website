@@ -206,7 +206,7 @@ export function Footer({ data, footerLinks2 }: FooterLinksProps) {
       <Container size="auto" maw={1200} className={classes.inner}>
         <Grid grow>{groups2}</Grid>
       </Container>
-      <Container className={classes.afterFooter}>
+      <Container size="auto" maw={1200} className={classes.afterFooter}>
         <Text color="dimmed" size="sm">
           © 2023 CodifyPlus.com | All rights reserved.
         </Text>
