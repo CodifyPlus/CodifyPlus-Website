@@ -50,9 +50,6 @@ const useStyles = createStyles((theme) => ({
   },
 
   inner: {
-    display: "flex",
-    justifyContent: "space-between",
-
     [theme.fn.smallerThan("sm")]: {
       flexDirection: "column",
       alignItems: "center",
@@ -60,8 +57,6 @@ const useStyles = createStyles((theme) => ({
   },
 
   groups: {
-    display: "flex",
-    flexWrap: "wrap",
     [theme.fn.smallerThan("sm")]: {
       marginTop: theme.spacing.xl,
     },
@@ -122,9 +117,13 @@ interface FooterLinksProps {
     title: string;
     links: { label: string; link: string }[];
   }[];
+  footerLinks2: {
+    title: string;
+    links: { label: string; link: string }[];
+  }[];
 }
 
-export function Footer({ data }: FooterLinksProps) {
+export function Footer({ data, footerLinks2 }: FooterLinksProps) {
   const { classes } = useStyles();
 
   const groups = data.map((group) => {
@@ -142,7 +141,36 @@ export function Footer({ data }: FooterLinksProps) {
     ));
 
     return (
-      <Grid.Col md={6} lg={4}>
+      <Grid.Col md={6} lg={3}>
+        <Center>
+          <div className={classes.wrapper} key={group.title}>
+            <Center>
+              <Text className={classes.title}>{group.title}</Text>
+            </Center>
+            {links}
+          </div>
+        </Center>
+      </Grid.Col>
+    );
+  });
+
+  const groups2 = footerLinks2.map((group) => {
+    const links = group.links.map((link, index) => (
+      <Center>
+        <Text
+          align="center"
+          key={index}
+          className={classes.link}
+          component={Link}
+          to={link.link}
+        >
+          {link.label}
+        </Text>
+      </Center>
+    ));
+
+    return (
+      <Grid.Col md={6} lg={3}>
         <Center>
           <div className={classes.wrapper} key={group.title}>
             <Center>
@@ -158,15 +186,30 @@ export function Footer({ data }: FooterLinksProps) {
   return (
     <footer className={classes.footer}>
       <Container className={classes.inner}>
-        <div className={classes.logo}>
-          <LogoStatic />
-          <Text size="xs" color="dimmed" className={classes.description}>
-            Business Accelerator and Toolkit
-          </Text>
-        </div>
-        <div className={classes.groups}>
-          <Grid>{groups}</Grid>
-        </div>
+        <Grid grow>
+          <Grid.Col md={6} lg={3}>
+            <Center>
+              <div className={classes.logo}>
+                <Center>
+                  <LogoStatic />
+                </Center>
+                <Center>
+                  <Text
+                    size="xs"
+                    color="dimmed"
+                    className={classes.description}
+                  >
+                    Business Accelerator and Toolkit
+                  </Text>
+                </Center>
+              </div>
+            </Center>
+          </Grid.Col>
+          {groups}
+        </Grid>
+      </Container>
+      <Container className={classes.inner}>
+        <Grid>{groups2}</Grid>
       </Container>
       <Container className={classes.afterFooter}>
         <Text color="dimmed" size="sm">

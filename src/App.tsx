@@ -9,7 +9,7 @@ import { useHotkeys, useLocalStorage } from "@mantine/hooks";
 import Home from "./components/Screens/Home";
 import { Route, Routes } from "react-router-dom";
 import { Footer } from "./components/Fragments/Footer/Footer";
-import footerLinks from "./components/data/footerLinks";
+import { footerLinks, footerLinks2 } from "./components/data/footerLinks";
 import OurProcesData from "./components/data/OurProcessData";
 import { MegaNavbar } from "./components/Fragments/Navbar/MegaNavbar";
 import React from "react";
@@ -446,7 +446,7 @@ export default function App() {
             }
           />
         </Routes>
-        <Footer data={footerLinks.data} />
+        <Footer data={footerLinks.data} footerLinks2={footerLinks2.data} />
       </MantineProvider>
     </ColorSchemeProvider>
   );
