@@ -9,7 +9,6 @@ import {
 } from "@mantine/core";
 import {
   IconBrandTwitter,
-  IconBrandYoutube,
   IconBrandInstagram,
   IconChevronRight,
 } from "@tabler/icons-react";
@@ -212,13 +211,18 @@ export function Footer({ data, footerLinks2 }: FooterLinksProps) {
         </Text>
 
         <Group spacing={0} className={classes.social} position="right" noWrap>
-          <ActionIcon size="lg">
+          <ActionIcon
+            component={Link}
+            to="https://twitter.com/CodifyPlus"
+            size="lg"
+          >
             <IconBrandTwitter size="1.05rem" stroke={1.5} />
           </ActionIcon>
-          <ActionIcon size="lg">
-            <IconBrandYoutube size="1.05rem" stroke={1.5} />
-          </ActionIcon>
-          <ActionIcon size="lg">
+          <ActionIcon
+            component={Link}
+            to="https://www.instagram.com/codifyplus"
+            size="lg"
+          >
             <IconBrandInstagram size="1.05rem" stroke={1.5} />
           </ActionIcon>
         </Group>
